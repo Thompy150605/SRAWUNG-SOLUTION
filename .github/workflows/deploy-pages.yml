@@ -23,10 +23,13 @@ jobs:
           node-version: 22
 
       - name: Install dependencies
-        run: npm install --no-audit --no-fund
+        run: |
+          npm install --no-audit --no-fund --legacy-peer-deps > npm.log 2>&1 || { tail -n 25 npm.log | while IFS= read -r l; do echo "::error::$l"; done; exit 1; }
 
       - name: Build
-        run: npm run build
+        run: |
+          npm run build > build.log 2>&1 || { tail -n 25 build.log | while IFS= read -r l; do echo "::error::$l"; done; exit 1; }
+          cat build.log
         env:
           GITHUB_PAGES: 'true'
 
