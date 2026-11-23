@@ -17,14 +17,14 @@ export const CONTACT = {
 };
 
 export const PHOTOS = {
-  merapiCorridor: '/assets/bulaksalak/merapi-corridor.jpg',
-  villaPool: '/assets/bulaksalak/villa-pool.jpg',
-  villaAerial: '/assets/bulaksalak/villa-aerial.jpg',
-  bambooForest: '/assets/bulaksalak/bamboo-forest.jpg',
-  bambooTrail: '/assets/bulaksalak/bamboo-trail.jpg',
-  heritageWalk: '/assets/bulaksalak/heritage-walk.jpg',
-  pasarMarket: '/assets/bulaksalak/pasar-sor-pring.jpg',
-  pasarCulinary: '/assets/bulaksalak/pasar-culinary.jpg',
+  merapiCorridor: import.meta.env.BASE_URL + 'assets/bulaksalak/merapi-corridor.jpg',
+  villaPool: import.meta.env.BASE_URL + 'assets/bulaksalak/villa-pool.jpg',
+  villaAerial: import.meta.env.BASE_URL + 'assets/bulaksalak/villa-aerial.jpg',
+  bambooForest: import.meta.env.BASE_URL + 'assets/bulaksalak/bamboo-forest.jpg',
+  bambooTrail: import.meta.env.BASE_URL + 'assets/bulaksalak/bamboo-trail.jpg',
+  heritageWalk: import.meta.env.BASE_URL + 'assets/bulaksalak/heritage-walk.jpg',
+  pasarMarket: import.meta.env.BASE_URL + 'assets/bulaksalak/pasar-sor-pring.jpg',
+  pasarCulinary: import.meta.env.BASE_URL + 'assets/bulaksalak/pasar-culinary.jpg',
 };
 
 export interface BookingCatalogItem {
