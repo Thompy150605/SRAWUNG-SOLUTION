@@ -1,0 +1,6 @@
+{
+  "name": "SRAWUNG — Bulaksalak Official Destination Hub",
+  "description": "Official destination guide and reservation hub for Villa Ndalem Riyartan, Desa Wisata Bambu Bulaksalak, and Pasar Sor Pring in Cangkringan, Sleman, Yogyakarta.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
